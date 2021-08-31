@@ -1,0 +1,178 @@
+/* GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80vh;
+    background-image: url(./imgenes/logo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.titulos {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(199, 33, 33);
+}
+
+.titulos h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.titulos h2 {
+    font-size: 40px;
+}
+
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 35%;
+    box-shadow: 5px 5px 5px black;
+    margin-bottom: 20px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.titulo-s {
+    color: rgb(51, 9, 39);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contenedor {
+    background-image: url(./imgenes/opcion1.jpg);
+    width: 100%;
+    box-shadow: none;
+    background-size: cover;
+    background-position: center ;
+}
+
+.contenedor-nocturno {
+    background-image: linear-gradient(rgba(59, 6, 59, 0.582), rgba(76, 0, 255, 0.459)), url(./imgenes/opcion1.jpg);
+    color: rgb(238, 55, 9);
+}
+
+.contenedor-nocturno nav {
+    background-color: rgb(59, 6, 59);
+}
+
+.contenedor-nocturno footer {
+    background-color: rgb(59, 6, 59);
+}
+
+.productos {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color: teal;
+    height: 40px;
+}
+
+ul {
+    display: flex;
+    color: white;
+}
+
+li {
+    list-style: none;
+    color: white;
+}
+
+li a {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(241, 85, 241);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: teal;
+}
+
+footer a {
+    font-size: 30px;
+    margin-right: 20px;
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(241, 85, 241);
+}
+
+hr {
+    height: 50px;
+}
+
+.animar {
+    animation: titulo 1s infinite forwards alternate;
+}
+
+.carousel {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.centrar {
+    object-fit: cover;
+}
+.firma{
+    text-align: center;
+    color: black;
+    background: teal;
+    height: 40px;
+}
+@keyframes titulo {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 500px) {
+     ul{
+         flex-direction: column;
+     }
+    nav{
+        height: 120px;
+    }
+    
+}
